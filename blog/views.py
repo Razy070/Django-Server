@@ -205,3 +205,7 @@ def search(request):
         todos = Post.objects.all()
 
     return render(request, 'index.html', {'post_list': todos})
+
+
+def work_read(request):
+    return render(request, 'work.html')
